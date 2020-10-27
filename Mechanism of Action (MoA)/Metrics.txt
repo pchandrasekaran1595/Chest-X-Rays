@@ -13,5 +13,7 @@ Kaggle Ensemble 7FCV -> 0.01874 (Using Best Models based on Validation Loss)
 
 Kaggle Ensemble 10FCV -> 0.01873 (Using Best Models based on Validation Loss)
 
+10FCV, 3 Seed Average, All Models -> 0.01868
+
 XGB (Baseline and Seed Averaged) -> 0.02792
 
