@@ -313,7 +313,7 @@ def train_fn(X=None, y=None, n_folds=None, n_seeds=None, HL_to_use=None):
       tr_data_setup = DS(X_train, y_train)
       va_data_setup = DS(X_valid, y_valid)
 
-      dataloaders = {"train" : DL(tr_data_setup, batch_size=cfg.tr_batch_size, shuffle=True, generator=torch.manual_seed(0)),
+      dataloaders = {"train" : DL(tr_data_setup, batch_size=cfg.tr_batch_size, shuffle=True, generator=torch.manual_seed(0)), #Used seed here as well. 2nd run does that.
                     "valid" : DL(va_data_setup, batch_size=cfg.va_batch_size, shuffle=False)
                     }
 
