@@ -347,6 +347,9 @@ def train_fn(X=None, y=None, n_folds=None, n_seeds=None, HL_to_use=None):
           epochLoss[phase] = lossPerPass
         LP.append(epochLoss)
         scheduler.step(epochLoss["valid"])
+        #name = "Model_{id}_Fold_{fold}_Seed_{seed}.pt".format(id=len(HL_to_use), fold=fold, seed=seed)
+        #names.append(name)
+        #torch.save(model.state_dict(), datapath+name)
         if epochLoss["valid"] < bestLoss["valid"]:
           bestLoss = epochLoss
           name = "Model_{id}_Fold_{fold}_Seed_{seed}.pt".format(id=len(HL_to_use), fold=fold, seed=seed)
