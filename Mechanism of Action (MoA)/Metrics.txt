@@ -14,6 +14,7 @@ Kaggle Ensemble 7FCV -> 0.01874 (Using Best Models based on Validation Loss)
 Kaggle Ensemble 10FCV -> 0.01873 (Using Best Models based on Validation Loss)
 
 10FCV, 3 Seed Average, All Models -> 0.01868
+10FCV, 5 Seed Average, All Models -> 0.01867 (relu, leaky_relu, prelu, seed for weight init, seed for split)
 
 XGB (Baseline and Seed Averaged) -> 0.02792
 
