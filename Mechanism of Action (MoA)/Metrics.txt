@@ -1,20 +1,29 @@
-Folder contains notebooks in relation to the MoA competition (https://www.kaggle.com/c/lish-moa).
+class CFG():
+  tr_batch_size = 128
+  va_batch_size = 128
+  ts_batch_size = 512
 
-4FCV -> 0.01887
-5FCV -> 0.01886
+  epochs = 50
 
-4FCV, Seed Averaged -> 0.019
+  IL = NUM_FEATURES
+  HL_1 = [2048]
+  HL_2 = [2048, 1024]
+  HL_3 = [2048, 1024, 512]
+  OL = NUM_CLASSES
 
-Random CV Colab Ensemble -> 0.01919
+  n_folds = 4
+  n_seeds = 3
 
-7FCV [2048, 2048] -> 0.01892
-7FCV [2048, 1024, 512] -> 0.01880
-Kaggle Ensemble 7FCV -> 0.01874 (Using Best Models based on Validation Loss)
+  device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-Kaggle Ensemble 10FCV -> 0.01873 (Using Best Models based on Validation Loss)
+###################################################################################
 
-10FCV, 3 Seed Average, All Models -> 0.01868
-10FCV, 5 Seed Average, All Models -> 0.01867 (relu, leaky_relu, prelu, seed for weight init, seed for split)
+1. StandardScaler
 
-XGB (Baseline and Seed Averaged) -> 0.02792
+Config 1   :  0.016790262207650914
+Config 2   :  0.016615097337112684
+Config 3   :  0.01666763794392175
+Ensemble 1 :  0.016630458604758667 (2+3)
+Ensemble 2 :  0.016558117831390523 (1+2+3)
 
+###################################################################################
