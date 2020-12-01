@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 
 from Dataset import Dataset
 from MLP import MLP
-import train_val as tv
+import fit_predict as fp
 
 import torch
 from torch import nn
@@ -69,14 +69,15 @@ def preprocess(x=None, *args):
     return df
 
 
+root_dir = "C:/Users/Ourself/Desktop/Machine Learning/Projects/Churn Modelling/"
 si_mu = SimpleImputer(missing_values=np.nan, strategy="mean")
 si_mf = SimpleImputer(missing_values=np.nan, strategy="most_frequent")
 sc_X = StandardScaler()
 
 if __name__ == "__main__":
 
-    tr_features = pd.read_csv("C:/Users/Ourself/Desktop/Machine Learning/Projects/Churn Modelling/train.csv")
-    ts_features = pd.read_csv("C:/Users/Ourself/Desktop/Machine Learning/Projects/Churn Modelling/test.csv")
+    tr_features = pd.read_csv(root_dir + "train.csv")
+    ts_features = pd.read_csv(root_dir + "test.csv")
 
     tr_features = tr_features.drop(labels="id", axis=1)
     ts_features = ts_features.drop(labels="id", axis=1)
@@ -125,7 +126,7 @@ if __name__ == "__main__":
     model = MLP(cfg.IL, cfg.HL, cfg.OL)
     optimizer = model.getOptimizer(lr=1e-3, wd=0)
 
-    LP = tv.singleModelTrain(model, optimizer, tr_data, 5, nn.BCEWithLogitsLoss(), cfg.device)
+    LP = fp.fit_SingleModel(model, optimizer, tr_data, 5, nn.BCEWithLogitsLoss(), cfg.device)
 
     plt.ion()
     plt.figure(figsize=(6,6))
@@ -140,9 +141,9 @@ if __name__ == "__main__":
     ts_data_setup = Dataset(X_test, None, "test")
     ts_data = DL(ts_data_setup, batch_size=cfg.ts_batch_size, shuffle=False)
 
-    y_pred = tv.singleModelEval(model, ts_data, cfg.ts_batch_size, cfg.device)
+    y_pred = fp.predict_sm(model, ts_data, cfg.ts_batch_size, cfg.device)
 
-    ss = pd.read_csv("C:/Users/Ourself/Desktop/Machine Learning/Projects/Churn Modelling/sample_submission.csv")
+    ss = pd.read_csv(root_dir + "sample_submission.csv")
     ss["Churn"] = y_pred
     ss.to_csv("./submission.csv", index=False)
 

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
 
-import train_val as tv
+import fit_predict as fp
 from MLP import MLP
 from Dataset import Dataset
 
@@ -117,13 +117,13 @@ if __name__ == "__main__":
 
     cfg = CFG(IL=X.shape[1], HL=[256, 256], epochs=50, n_folds=10, n_seeds=5, use_DP=True, DP1=0.2, DP2=0.5)
 
-    Names, LP = tv.seedAvgKFoldModelTrain(X=X, y=y, epochs=cfg.epochs, n_folds=cfg.n_folds, n_seeds=cfg.n_seeds,
-                                          IL=cfg.IL, HL=cfg.HL, OL=cfg.OL, use_DP=cfg.use_DP, DP1=cfg.DP1, DP2=cfg.DP2,
-                                          lr=1e-3, wd=1e-5, patience=4, lr_eps=1e-8, use_all=True,
-                                          tr_batch_size=cfg.tr_batch_size,
-                                          va_batch_size=cfg.va_batch_size,
-                                          criterion=nn.BCEWithLogitsLoss(),
-                                          device=cfg.device, path=model_path)
+    Names, LP = fp.fit_SeedAvgKFold(X=X, y=y, epochs=cfg.epochs, n_folds=cfg.n_folds, n_seeds=cfg.n_seeds,
+                                    IL=cfg.IL, HL=cfg.HL, OL=cfg.OL, use_DP=cfg.use_DP, DP1=cfg.DP1, DP2=cfg.DP2,
+                                    lr=1e-3, wd=1e-5, patience=4, lr_eps=1e-8, use_all=True,
+                                    tr_batch_size=cfg.tr_batch_size,
+                                    va_batch_size=cfg.va_batch_size,
+                                    criterion=nn.BCEWithLogitsLoss(),
+                                    device=cfg.device, path=model_path, verbose=True)
 
     LPV = []
     LPT = []
@@ -151,8 +151,8 @@ if __name__ == "__main__":
     ts_data_setup = Dataset(X_test, None, "test")
     ts_data = DL(ts_data_setup, batch_size=cfg.ts_batch_size, shuffle=False)
 
-    y_pred = tv.kFoldModelEval(Model, set(Names), ts_data, ts_data_setup.__len__(), cfg.ts_batch_size,
-                               cfg.device, model_path)
+    y_pred = fp.predict_sm(Model, set(Names), ts_data, ts_data_setup.__len__(), cfg.ts_batch_size,
+                           cfg.device, model_path)
 
     ss = pd.read_csv(root_path + "sample_submission.csv")
     ss["Churn"] = y_pred
