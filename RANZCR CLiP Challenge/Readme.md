@@ -7,3 +7,4 @@ Folder containing all Notebooks and scripts used for the challenge, [RANZCR CLiP
 2. cfg = CFG(filter_sizes=[64, 128, 256, 512], HL=[2048], epochs=30, n_folds=5) 
 3. model = CNN(filter_sizes=cfg.filter_sizes, HL=cfg.HL, OL=cfg.OL, use_DP=True, DP=0.5).to(cfg.device)
 4. optimizer = model.getOptimizer(lr=1e-3, wd=1e-5)
+5. AUC Score - 0.902
