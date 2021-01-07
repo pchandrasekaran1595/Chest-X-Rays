@@ -1,5 +1,5 @@
 @settings {
-  font-size: 50;
+  font-size: 200;
 }
 
 ### RCCL-384 10L
