@@ -3,7 +3,7 @@
 First 25 Epochs
 ---------------
 
-Epoch: 1 | Train Loss: 0.29729 | Valid Loss: 0.29604 | Time: 798.57 seconds
+   Epoch: 1 | Train Loss: 0.29729 | Valid Loss: 0.29604 | Time: 798.57 seconds
 Epoch: 2 | Train Loss: 0.28112 | Valid Loss: 0.36320 | Time: 797.77 seconds
 Epoch: 3 | Train Loss: 0.27090 | Valid Loss: 0.54442 | Time: 797.72 seconds
 Epoch: 4 | Train Loss: 0.26154 | Valid Loss: 0.25057 | Time: 797.75 seconds
@@ -27,7 +27,7 @@ Epoch: 21 | Train Loss: 0.20174 | Valid Loss: 0.20570 | Time: 797.72 seconds
 Epoch: 22 | Train Loss: 0.19817 | Valid Loss: 0.19712 | Time: 797.81 seconds
 Epoch: 23 | Train Loss: 0.19542 | Valid Loss: 0.19543 | Time: 797.72 seconds
 Epoch: 24 | Train Loss: 0.19223 | Valid Loss: 0.18700 | Time: 797.85 seconds
-Epoch: 25 | Train Loss: 0.18959 | Valid Loss: 0.19559 | Time: 797.79 seconds
+Epoch: 25 | Train Loss: 0.18959 | Valid Loss: 0.19559 | Time: 797.79 seconds   
 
 
 Next 25 Epochs
