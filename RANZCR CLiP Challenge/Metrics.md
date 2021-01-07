@@ -3,8 +3,8 @@
 First 25 Epochs
 ---------------
 
-   Epoch: 1 | Train Loss: 0.29729 | Valid Loss: 0.29604 | Time: 798.57 seconds
-Epoch: 2 | Train Loss: 0.28112 | Valid Loss: 0.36320 | Time: 797.77 seconds
+   Epoch: 1 | Train Loss: 0.29729 | Valid Loss: 0.29604 | Time: 798.57 seconds   
+   Epoch: 2 | Train Loss: 0.28112 | Valid Loss: 0.36320 | Time: 797.77 seconds   
 Epoch: 3 | Train Loss: 0.27090 | Valid Loss: 0.54442 | Time: 797.72 seconds
 Epoch: 4 | Train Loss: 0.26154 | Valid Loss: 0.25057 | Time: 797.75 seconds
 Epoch: 5 | Train Loss: 0.24523 | Valid Loss: 0.23921 | Time: 797.84 seconds
