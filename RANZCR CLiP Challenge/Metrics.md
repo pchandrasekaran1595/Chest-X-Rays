@@ -1,7 +1,3 @@
-@settings {
-  font-size: 200;
-}
-
 ### RCCL-384 10L
 
 First 25 Epochs
