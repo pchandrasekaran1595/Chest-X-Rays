@@ -5,29 +5,29 @@ First 25 Epochs
 
    Epoch: 1 | Train Loss: 0.29729 | Valid Loss: 0.29604 | Time: 798.57 seconds   
    Epoch: 2 | Train Loss: 0.28112 | Valid Loss: 0.36320 | Time: 797.77 seconds   
-Epoch: 3 | Train Loss: 0.27090 | Valid Loss: 0.54442 | Time: 797.72 seconds
-Epoch: 4 | Train Loss: 0.26154 | Valid Loss: 0.25057 | Time: 797.75 seconds
-Epoch: 5 | Train Loss: 0.24523 | Valid Loss: 0.23921 | Time: 797.84 seconds
-Epoch: 6 | Train Loss: 0.23907 | Valid Loss: 0.25984 | Time: 797.69 seconds
-Epoch: 7 | Train Loss: 0.23483 | Valid Loss: 0.22701 | Time: 797.78 seconds
-Epoch: 8 | Train Loss: 0.23210 | Valid Loss: 0.22377 | Time: 797.78 seconds
-Epoch: 9 | Train Loss: 0.22945 | Valid Loss: 0.22234 | Time: 797.82 seconds
-Epoch: 10 | Train Loss: 0.22719 | Valid Loss: 0.26790 | Time: 797.79 seconds
-Epoch: 11 | Train Loss: 0.22613 | Valid Loss: 0.22764 | Time: 797.59 seconds
-Epoch: 12 | Train Loss: 0.22466 | Valid Loss: 0.23445 | Time: 797.82 seconds
-Epoch: 13 | Train Loss: 0.22320 | Valid Loss: 0.21931 | Time: 797.73 seconds
-Epoch: 14 | Train Loss: 0.22068 | Valid Loss: 0.24427 | Time: 797.70 seconds
-Epoch: 15 | Train Loss: 0.21751 | Valid Loss: 0.21294 | Time: 797.86 seconds
-Epoch: 16 | Train Loss: 0.21455 | Valid Loss: 0.21219 | Time: 797.97 seconds
-Epoch: 17 | Train Loss: 0.21158 | Valid Loss: 0.21542 | Time: 797.75 seconds
-Epoch: 18 | Train Loss: 0.20938 | Valid Loss: 0.20502 | Time: 798.00 seconds
-Epoch: 19 | Train Loss: 0.20713 | Valid Loss: 0.27108 | Time: 797.88 seconds
-Epoch: 20 | Train Loss: 0.20407 | Valid Loss: 0.21821 | Time: 797.91 seconds
-Epoch: 21 | Train Loss: 0.20174 | Valid Loss: 0.20570 | Time: 797.72 seconds
-Epoch: 22 | Train Loss: 0.19817 | Valid Loss: 0.19712 | Time: 797.81 seconds
-Epoch: 23 | Train Loss: 0.19542 | Valid Loss: 0.19543 | Time: 797.72 seconds
-Epoch: 24 | Train Loss: 0.19223 | Valid Loss: 0.18700 | Time: 797.85 seconds
-Epoch: 25 | Train Loss: 0.18959 | Valid Loss: 0.19559 | Time: 797.79 seconds   
+   Epoch: 3 | Train Loss: 0.27090 | Valid Loss: 0.54442 | Time: 797.72 seconds
+   Epoch: 4 | Train Loss: 0.26154 | Valid Loss: 0.25057 | Time: 797.75 seconds
+   Epoch: 5 | Train Loss: 0.24523 | Valid Loss: 0.23921 | Time: 797.84 seconds
+   Epoch: 6 | Train Loss: 0.23907 | Valid Loss: 0.25984 | Time: 797.69 seconds
+   Epoch: 7 | Train Loss: 0.23483 | Valid Loss: 0.22701 | Time: 797.78 seconds
+   Epoch: 8 | Train Loss: 0.23210 | Valid Loss: 0.22377 | Time: 797.78 seconds
+   Epoch: 9 | Train Loss: 0.22945 | Valid Loss: 0.22234 | Time: 797.82 seconds
+   Epoch: 10 | Train Loss: 0.22719 | Valid Loss: 0.26790 | Time: 797.79 seconds
+   Epoch: 11 | Train Loss: 0.22613 | Valid Loss: 0.22764 | Time: 797.59 seconds
+   Epoch: 12 | Train Loss: 0.22466 | Valid Loss: 0.23445 | Time: 797.82 seconds
+   Epoch: 13 | Train Loss: 0.22320 | Valid Loss: 0.21931 | Time: 797.73 seconds
+   Epoch: 14 | Train Loss: 0.22068 | Valid Loss: 0.24427 | Time: 797.70 seconds
+   Epoch: 15 | Train Loss: 0.21751 | Valid Loss: 0.21294 | Time: 797.86 seconds
+   Epoch: 16 | Train Loss: 0.21455 | Valid Loss: 0.21219 | Time: 797.97 seconds
+   Epoch: 17 | Train Loss: 0.21158 | Valid Loss: 0.21542 | Time: 797.75 seconds
+   Epoch: 18 | Train Loss: 0.20938 | Valid Loss: 0.20502 | Time: 798.00 seconds
+   Epoch: 19 | Train Loss: 0.20713 | Valid Loss: 0.27108 | Time: 797.88 seconds
+   Epoch: 20 | Train Loss: 0.20407 | Valid Loss: 0.21821 | Time: 797.91 seconds
+   Epoch: 21 | Train Loss: 0.20174 | Valid Loss: 0.20570 | Time: 797.72 seconds
+   Epoch: 22 | Train Loss: 0.19817 | Valid Loss: 0.19712 | Time: 797.81 seconds
+   Epoch: 23 | Train Loss: 0.19542 | Valid Loss: 0.19543 | Time: 797.72 seconds
+   Epoch: 24 | Train Loss: 0.19223 | Valid Loss: 0.18700 | Time: 797.85 seconds
+   Epoch: 25 | Train Loss: 0.18959 | Valid Loss: 0.19559 | Time: 797.79 seconds   
 
 
 Next 25 Epochs
