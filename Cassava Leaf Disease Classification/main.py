@@ -19,7 +19,7 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 seed = 42
-root_dir = "G:/ML Projects/CLDC"
+root_dir = ".../CLDC"
 
 
 def breaker():
@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
     print(tr_images.shape)
 
-    cfg = CFG(filter_sizes=[4, 4, 4, 4], HL=[4], AP_size=3, epochs=2)
+    cfg = CFG(filter_sizes=[64, 128, 256, 512], HL=[4096, 4096], AP_size=3, epochs=2)
 
     tr_transform = transforms.Compose([transforms.ToTensor(), ])
     va_transform = transforms.Compose([transforms.ToTensor(), ])
@@ -85,7 +85,7 @@ if __name__ == "__main__":
                                                              trainloader=tr_data, validloader=va_data,
                                                              criterion=nn.NLLLoss(), device=cfg.device,
                                                              verbose=True, save_to_file=True,
-                                                             path="G:/ML Projects/CLDC/States")
+                                                             path=".../States")
 
     LT = []
     LV = []
@@ -117,4 +117,4 @@ if __name__ == "__main__":
     plt.show()
 
     y_pred = predict_2(model=model, dataloader=va_data, device=cfg.device,
-                       path="G:/ML Projects/CLDC/States/Epoch_{}.pt".format(bestLossEpoch))
+                       path=".../States/Epoch_{}.pt".format(bestLossEpoch))
